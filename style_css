@@ -1,25 +1,32 @@
+const mobileMenu = document.getElementById('mobile-menu');
+const navMenu = document.querySelector('.nav-menu');
 
-// Efeito de scroll no Header
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('#header');
-    if (window.scrollY > 50) {
-        header.style.padding = '10px 0';
-        header.style.backgroundColor = '#ffffff';
-    } else {
-        header.style.padding = '20px 0';
-    }
+// Toggle Menu Mobile
+mobileMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    
+    // Animação das barras do menu hambúrguer
+    const bars = document.querySelectorAll('.bar');
+    bars[0].classList.toggle('rotate1');
+    bars[1].classList.toggle('fade');
+    bars[2].classList.toggle('rotate2');
 });
 
-// Mensagem de boas-vindas no console (opcional)
-console.log("Agro Forte, Futuro Sustentável - Site carregado com sucesso!");
-
-// Aqui você poderia adicionar um menu mobile funcional
-const menuToggle = document.querySelector('#mobile-menu');
-const navLinks = document.querySelector('.nav-links');
-
-if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-        // Logica para abrir/fechar menu em telas pequenas
-        alert("O menu mobile seria ativado aqui!");
+// Fechar menu ao clicar em um link
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
     });
-}
+});
+
+// Efeito de mudança no header ao rolar a página
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('navbar');
+    if (window.scrollY > 100) {
+        header.style.padding = '0.5rem 0';
+        header.style.background = 'rgba(255, 255, 255, 0.98)';
+    } else {
+        header.style.padding = '1rem 0';
+        header.style.background = 'rgba(255, 255, 255, 0.95)';
+    }
+});
