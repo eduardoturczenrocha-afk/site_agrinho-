@@ -1,71 +1,71 @@
-Com certeza! Vou estruturar um projeto moderno, limpo e responsivo para o tema Agro Forte, Futuro Sustentável. O foco visual será em tons de verde e terra, com um layout que se adapta bem a celulares e computadores.
-
-1. index.html
-Este arquivo contém a estrutura do site, incluindo uma seção hero, uma área de informações sobre o equilíbrio ambiental e um formulário de contato.
-
-HTML
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte | Futuro Sustentável</title>
+    <title>Agro Forte & Sustentável</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header id="header">
-        <nav class="container">
-            <div class="logo">Agro<span>Sustentável</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#contato" class="btn-nav">Contato</a></li>
-            </ul>
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="logo">AGRO<span>VIVA</span></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#sobre">Equilíbrio</a></li>
+                    <li><a href="#contato" class="btn-cta">Fale Conosco</a></li>
+                </ul>
+            </nav>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-        </nav>
+        </div>
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-content container">
-            <h1>Produção que Nutre, <br>Cuidado que Preserva.</h1>
-            <p>O equilíbrio perfeito entre a força do agronegócio e a regeneração do meio ambiente.</p>
-            <a href="#sobre" class="btn-primary">Saiba Mais</a>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Agro Forte: <br><span>Futuro Sustentável</span></h1>
+            <p>Onde a tecnologia de alta performance encontra o respeito absoluto pela biodiversidade.</p>
+            <div class="hero-btns">
+                <a href="#sobre" class="btn-main">Conheça a Visão</a>
+            </div>
         </div>
     </section>
 
-    <section id="sobre" class="features container">
-        <div class="feature-card">
-            <h3>Produção Eficiente</h3>
-            <p>Otimização de recursos para alimentar o mundo com o máximo de produtividade por hectare.</p>
+    <section id="pilares" class="features container">
+        <div class="section-title">
+            <h2>Nossos Compromissos</h2>
+            <div class="underline"></div>
         </div>
-        <div class="feature-card">
-            <h3>Preservação Ativa</h3>
-            <p>Monitoramento de biomas e recuperação de nascentes integrados ao ciclo produtivo.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Futuro Verde</h3>
-            <p>Uso de energia renovável e crédito de carbono para um impacto ambiental positivo.</p>
-        </div>
-    </section>
-
-    <section id="tecnologia" class="cta">
-        <div class="container">
-            <h2>Tecnologia a Serviço da Natureza</h2>
-            <p>Utilizamos agricultura de precisão para reduzir o desperdício de insumos e proteger o solo.</p>
+        <div class="grid-features">
+            <div class="card">
+                <div class="icon">🌱</div>
+                <h3>Produção Consciente</h3>
+                <p>Otimização do solo através de rotação de culturas e bioinsumos.</p>
+            </div>
+            <div class="card">
+                <div class="icon">💧</div>
+                <h3>Gestão Hídrica</h3>
+                <p>Sistemas de irrigação inteligente que reduzem o consumo de água em 40%.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🛰️</div>
+                <h3>Agro 5.0</h3>
+                <p>Monitoramento via satélite para evitar o desmatamento e focar na precisão.</p>
+            </div>
         </div>
     </section>
 
     <footer id="contato">
         <div class="container">
-            <p>&copy; 2026 Agro Forte Futuro Sustentável. Todos os direitos reservados.</p>
+            <p>&copy; 2026 AgroViva - Sustentabilidade e Produção. Todos os direitos reservados.</p>
         </div>
     </footer>
 
