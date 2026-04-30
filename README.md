@@ -1,5 +1,5 @@
-# site_agrinho                    abra este link para ver o site completo                        
-
+# site_agrinho                   
+abra este link para ver o site completo                        
 educatech-nfvrt9gm.manus.space
  
 🌱 Transformando o Agronegócio com Tecnologia
