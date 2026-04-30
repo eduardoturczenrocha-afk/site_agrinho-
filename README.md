@@ -1,4 +1,4 @@
-# site_agrinho                    abra este link para ver o ite completo educatech-nfvrt9gm.manus.space
+# site_agrinho                    abra este link para ver o site completo                         educatech-nfvrt9gm.manus.space
  
 🌱 Transformando o Agronegócio com Tecnologia
 Domine a Tecnologia Agrícola Hoje
